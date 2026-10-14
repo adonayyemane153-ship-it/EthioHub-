@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="am">
 <head>
@@ -15,70 +16,67 @@
         .price-card:hover { border-color: #ff007f; transform: translateY(-5px); }
         .price-card h3 { color: #ff007f; margin-top: 0; }
         .price { font-size: 1.8rem; font-weight: bold; margin: 15px 0; color: #ffffff; }
-        .btn { background-color: #ff007f; color: #ffffff; border: none; padding: 12px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%; font-size: 1rem; }
+        .btn { background-color: #ff007f; color: #ffffff; border: none; padding: 12px 20px; font-weight: bold; border-radius: 8px; cursor: pointer; width: 100%; text-decoration: none; display: inline-block; text-align: center; box-sizing: border-box; }
+        .btn:hover { background-color: #e6006f; }
         .payment-info { background-color: #1f1f1f; border-left: 5px solid #ff007f; padding: 20px; margin-top: 40px; border-radius: 4px; text-align: left; }
         .payment-info h2 { color: #ff007f; margin-top: 0; }
         .media-section { margin-top: 40px; padding: 20px; background-color: #1f1f1f; border-radius: 12px; }
-        .video-box { width: 100%; max-width: 560px; height: 315px; margin: 20px auto; background-color: #333; border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-        .video-box iframe, .video-box img { width: 100%; height: 100%; border: none; object-fit: cover; }
+        .video-box { width: 100%; max-width: 560px; height: 315px; margin: 20px auto; background-color: #333; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+        .video-box iframe, .video-box img { width: 100%; height: 100%; border-radius: 8px; object-fit: cover; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>EthioHub</h1>
-        <p>ለየት ለየት ያሉ አስገራሚና አዝናኝ ቪዲዮዎችን ይመልከቱ!</p>
-    </header>
+<header>
+    <h1>EthioHub</h1>
+    <p>ለየት ለየት ያሉ አስገራሚና አዝናኝ ቪዲዮዎችን ይመልከቱ!</p>
+</header>
 
-    <div class="container">
-        <p class="intro">እንኳን ወደ EthioHub በደህና መጡ! በየትኛውም ቦታ የማይገኙ ለየት ያሉ ምርጥ ቪዲዮዎችን፣ ፎቶዎችንና ጽሑፎችን እዚህ ያገኛሉ። ለመጀመር የፈለጉትን ጥቅል መርጠው አሁኑኑ ይመዝገቡ::</p>
-
-        <h2>የክፍያ አማራጮች (Subscription Plans)</h2>
-        <div class="pricing-container">
-            <div class="price-card">
-                <h3>1 ወር</h3>
-                <div class="price">989 ETB</div>
-                <button class="btn" onclick="alert('በቴሌብር (0927487505) ወይም በወጋገን ባንክ (1157193230101) ይክፈሉ!')">አሁኑኑ ይክፈሉ https://t.me/+_Sp66kHYjgliZjk8
-            
-            <div class="price-card">
-                <h3>3 ወር</h3>
-                <div class="price">1900 ETB</div>
-                <button class="btn" onclick="alert('በቴሌብር (0927487505) ወይም በወጋገን ባንክ (1157193230101) ይክፈሉ!')">አሁኑኑ ይክፈሉ https://t.me/+_Sp66kHYjgliZjk8
-          
-            <div class="price-card">
-                <h3>6 ወር</h3>
-                <div class="price">2900 ETB</div>
-                <button class="btn" onclick="alert('በቴሌብር (0927487505) ወይም በወጋገን ባንክ (1157193230101) ይክፈሉ!')">አሁኑኑ ይክፈሉ https://t.me/+_Sp66kHYjgliZjk8
-           
-            <div class="price-card">
-                <h3>1 ዓመት</h3>
-                <div class="price">4000 ETB</div>
-                <button class="btn" onclick="alert('በቴሌብር (0927487505) ወይም በወጋገን ባንክ (1157193230101) ይክፈሉ!')">አሁኑኑ ይክፈሉ https://t.me/+_Sp66kHYjgliZjk8
-            
+<div class="container">
+    <p class="intro">እንኳን ወደ EthioHub በደህና መጡ! በየትኛውም ቦታ የማይገኙ ለየት ያሉ ምርጥ ቪዲዮዎችን፣ ፎቶዎችንና ጽሑፎችን እዚህ ያገኛሉ። ለመጀመር የፈለጉትን ጥቅል መርጠው አሁኑኑ ይመዝገቡ::</p>
+    
+    <h2>የክፍያ አማራጮች (Subscription Plans)</h2>
+    <div class="pricing-container">
+        <div class="price-card">
+            <h3>1 ወር</h3>
+            <div class="price">989 ETB</div>
+            <a href="https://t.me" class="btn" target="_blank">አሁኑኑ ይክፈሉ</a>
         </div>
-
-        <div class="media-section">
-            <h2>የማሳያ ቪዲዮ እና ፎቶ (Sample Media)</h2>
-            <p>ከክፍያ የሚያዩት ማሳያ እዚህ ይቀመጣል፦</p>
-            
-            <div class="video-box">
-                <!-- የዩቲዩብ ቪዲዮ ለመጨመር ከታች ባለው 'src=' ውስጥ የቪዲዮዎን ሊንክ ያስገቡ -->
-                <iframe src="https://youtube.com" allowfullscreen></iframe>
-            </div>
-
-            <div class="video-box" style="margin-top: 20px;">
-                <!-- ፎቶ ለመጨመር ከታች ባለው 'src=' ውስጥ የፎቶውን ሊንክ ያስገቡ -->
-                <img src="https://picsum.photos" alt="የማሳያ ፎቶ">
-            </div>
+        <div class="price-card">
+            <h3>3 ወር</h3>
+            <div class="price">1900 ETB</div>
+            <a href="https://t.me" class="btn" target="_blank">አሁኑኑ ይክፈሉ</a>
         </div>
-
-        <div class="payment-info">
-            <h2>የክፍያ አቀባበል መረጃ</h2>
-            <p><strong>የቴሌብር (telebirr) ቁጥር:</strong> <span style="color:#00ff88; font-size:1.3rem;">0927487505</span></p>
-            <p><strong>የወጋገን ባንክ አካውንት:</strong> <span style="color:#00ff88; font-size:1.3rem;">1157193230101</span></p>
-            <p><em>ማሳሰቢያ: ክፍያ እንደፈጸሙ ወዲያውኑ የደረሰኝ ፎቶ (Screenshot) በመላክ አካውንትዎን ያስከፍቱ።</em></p>
+        <div class="price-card">
+            <h3>6 ወር</h3>
+            <div class="price">2900 ETB</div>
+            <a href="https://t.me" class="btn" target="_blank">አሁኑኑ ይክፈሉ</a>
+        </div>
+        <div class="price-card">
+            <h3>1 ዓመት</h3>
+            <div class="price">4000 ETB</div>
+            <a href="https://t.me" class="btn" target="_blank">አሁኑኑ ይክፈሉ</a>
         </div>
     </div>
+
+    <div class="media-section">
+        <h2>የማሳያ ቪዲዮ እና ፎቶ (Sample Media)</h2>
+        <p>ከክፍያ በፊት ተመልካቾች የሚያዩት ማሳያ እዚህ ይቀመጣል፦</p>
+        <div class="video-box">
+            <iframe src="https://youtube.com" allowfullscreen></iframe>
+        </div>
+        <div class="video-box" style="margin-top: 20px;">
+            <img src="https://picsum.photos" alt="የማሳያ ፎቶ">
+        </div>
+    </div>
+
+    <div class="payment-info">
+        <h2>የክፍያ አቀባበል መረጃ</h2>
+        <p><strong>የቴሌብር (telebirr) ቁጥር:</strong> <span style="color:#00ff88; font-size:1.3rem;">0927487505</span></p>
+        <p><strong>የወጋገን ባንክ አካውንት:</strong> <span style="color:#00ff88; font-size:1.3rem;">1157193230101</span></p>
+        <p><em>ማሳሰቢያ፦ ክፍያ እንደፈጸሙ ወዲያውኑ የደረሰኝ ፎቶ (Screenshot) በመላክ አካውንትዎን ያስከፍቱ::</em></p>
+    </div>
+</div>
 
 </body>
 </html>
