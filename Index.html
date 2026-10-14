@@ -18,7 +18,9 @@
         .btn { background-color: #ff007f; color: #ffffff; border: none; padding: 12px 20px; font-weight: bold; border-radius: 6px; cursor: pointer; width: 100%; font-size: 1rem; }
         .payment-info { background-color: #1f1f1f; border-left: 5px solid #ff007f; padding: 20px; margin-top: 40px; border-radius: 4px; text-align: left; }
         .payment-info h2 { color: #ff007f; margin-top: 0; }
-        .video-section { margin-top: 40px; padding: 20px; background-color: #1f1f1f; border-radius: 12px; }
+        .media-section { margin-top: 40px; padding: 20px; background-color: #1f1f1f; border-radius: 12px; }
+        .video-box { width: 100%; max-width: 560px; height: 315px; margin: 20px auto; background-color: #333; border-radius: 8px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .video-box iframe, .video-box img { width: 100%; height: 100%; border: none; object-fit: cover; }
     </style>
 </head>
 <body>
@@ -36,36 +38,45 @@
             <div class="price-card">
                 <h3>1 ወር</h3>
                 <div class="price">989 ETB</div>
-                <button class="btn" onclick="alert('በቴሌብር ወይም በወጋገን ባንክ ይክፈሉ!')">አሁኑኑ ይክፈሉ</button>
+                <button class="btn" onclick="alert('በቴሌብር (0927487505) ወይም በወጋገን ባንክ (1157193230101) ይክፈሉ!')">አሁኑኑ ይክፈሉ</button>
             </div>
             <div class="price-card">
                 <h3>3 ወር</h3>
                 <div class="price">1900 ETB</div>
-                <button class="btn" onclick="alert('በቴሌብር ወይም በወጋገን ባንክ ይክፈሉ!')">አሁኑኑ ይክፈሉ</button>
+                <button class="btn" onclick="alert('በቴሌብር (0927487505) ወይም በወጋገን ባንክ (1157193230101) ይክፈሉ!')">አሁኑኑ ይክፈሉ</button>
             </div>
             <div class="price-card">
                 <h3>6 ወር</h3>
                 <div class="price">2900 ETB</div>
-                <button class="btn" onclick="alert('በቴሌብር ወይም በወጋገን ባንክ ይክፈሉ!')">አሁኑኑ ይክፈሉ</button>
+                <button class="btn" onclick="alert('በቴሌብር (0927487505) ወይም በወጋገን ባንክ (1157193230101) ይክፈሉ!')">አሁኑኑ ይክፈሉ</button>
             </div>
             <div class="price-card">
                 <h3>1 ዓመት</h3>
                 <div class="price">4000 ETB</div>
-                <button class="btn" onclick="alert('በቴሌብር ወይም በወጋገን ባንክ ይክፈሉ!')">አሁኑኑ ይክፈሉ</button>
+                <button class="btn" onclick="alert('በቴሌብር (0927487505) ወይም በወጋገን ባንክ (1157193230101) ይክፈሉ!')">አሁኑኑ ይክፈሉ</button>
             </div>
         </div>
 
-        <div class="video-section">
-            <h2>የነፃ ማሳያ ቪዲዮ (Sample Video)</h2>
-            <p>ከክፍያ በፊት የቪዲዮዎቹን ጥራት እዚህ ማየት ይችላሉ፦</p>
-            <div style="background-color: #333; padding: 50px; border-radius: 8px; color: #aaa;">[የማሳያ ቪዲዮ እዚህ ይቀመጣል]</div>
+        <div class="media-section">
+            <h2>የማሳያ ቪዲዮ እና ፎቶ (Sample Media)</h2>
+            <p>ከክፍያ በፊት ተማሪዎች የሚያዩት ማሳያ እዚህ ይቀመጣል፦</p>
+            
+            <div class="video-box">
+                <!-- የዩቲዩብ ቪዲዮ ለመጨመር ከታች ባለው 'src=' ውስጥ የቪዲዮዎን ሊንክ ያስገቡ -->
+                <iframe src="https://youtube.com" allowfullscreen></iframe>
+            </div>
+
+            <div class="video-box" style="margin-top: 20px;">
+                <!-- ፎቶ ለመጨመር ከታች ባለው 'src=' ውስጥ የፎቶውን ሊንክ ያስገቡ -->
+                <img src="https://picsum.photos" alt="የማሳያ ፎቶ">
+            </div>
         </div>
 
         <div class="payment-info">
             <h2>የክፍያ አቀባበል መረጃ</h2>
-            <p><strong>የቴሌብር (telebirr) ቁጥር:</strong> [የእርስዎን የቴሌብር ቁጥር እዚህ ያስገቡ]</p>
-            <p><strong>የወጋገን ባንክ अकाውንት:</strong> [የወጋገን አካውንት ቁጥርዎን እዚህ ያስገቡ]</p>
-            <p><em>ማሳሰቢያ: ክፍያ እንደፈጸሙ ወዲያውኑ ቪዲዮዎቹ በራስ-ሰር ይከፈቱልዎታል።</em></p>
+            <p><strong>የቴሌብር (telebirr) ቁጥር:</strong> <span style="color:#00ff88; font-size:1.3rem;">0927487505</span></p>
+            <p><strong>የወጋገን ባንክ አካውንት:</strong> <span style="color:#00ff88; font-size:1.3rem;">1157193230101</span></p>
+            <p><em>ማሳሰቢያ: ክፍያ እንደፈጸሙ ወዲያውኑ የደረሰኝ ፎቶ (Screenshot) በመላክ አካውንትዎን ያስከፍቱ።</em></p>
         </div>
     </div>
 
